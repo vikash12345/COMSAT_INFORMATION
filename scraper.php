@@ -6,8 +6,8 @@ require 'scraperwiki.php';
 require 'scraperwiki/simple_html_dom.php';
 //
 // // Read in a page
-$html = scraperwiki::scrape("ww3.comsats.edu.pk/alumni/SearchDetailsOutside.aspx?Id=200");
-$name  =  $html->find("//*[@id='ctl00_ContentPlaceHolder1_DetailsView2_Label11']",0)->plaintext;
+$html = file_get_html("ww3.comsats.edu.pk/alumni/SearchDetailsOutside.aspx?Id=200");
+$name  =      $html->find("span[id='ctl00_ContentPlaceHolder1_DetailsView2_Label11']",0)->plaintext;
 echo $name;
 //
 // // Find something on the page using css selectors
