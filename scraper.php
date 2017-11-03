@@ -6,7 +6,9 @@ require 'scraperwiki.php';
 require 'scraperwiki/simple_html_dom.php';
 //
 // // Read in a page
-$html = file_get_html("ww3.comsats.edu.pk/alumni/SearchDetailsOutside.aspx?Id=200");
+// $html = scraperwiki::scrape("http://foo.com");
+
+$html = scraperwiki::scrape("ww3.comsats.edu.pk/alumni/SearchDetailsOutside.aspx?Id=200");
 $name  =      $html->find("span[id='ctl00_ContentPlaceHolder1_DetailsView2_Label11']",0)->plaintext;
 echo $name;
 //
