@@ -9,8 +9,9 @@ require 'scraperwiki/simple_html_dom.php';
 // $html = scraperwiki::scrape("http://foo.com");
 
 $html = scraperwiki::scrape("ww3.comsats.edu.pk/alumni/SearchDetailsOutside.aspx?Id=200");
-$name  =      $html->find('span[id="ctl00_ContentPlaceHolder1_DetailsView2_Label11"]',0)->plaintext;
-echo $name;
+echo $html;
+//$name  =      $html->find('span[id="ctl00_ContentPlaceHolder1_DetailsView2_Label11"]',0)->plaintext;
+//echo $name;
 //
 // // Find something on the page using css selectors
 // $dom = new simple_html_dom();
