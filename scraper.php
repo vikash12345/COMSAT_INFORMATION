@@ -7,9 +7,10 @@ require 'scraperwiki/simple_html_dom.php';
 //
 // // Read in a page
 // $html = scraperwiki::scrape("http://foo.com");
-
-$html = scraperwiki::scrape("ww3.comsats.edu.pk/alumni/SearchDetailsOutside.aspx?Id=200");
+	for($PageLoop = 0; $PageLoop < 2; $PageLoop++){
+$html = scraperwiki::scrape("ww3.comsats.edu.pk/alumni/SearchDetailsOutside.aspx?Id=".$PageLoop);
 echo $html;
+}
 //$name  =      $html->find('span[id="ctl00_ContentPlaceHolder1_DetailsView2_Label11"]',0)->plaintext;
 //echo $name;
 //
