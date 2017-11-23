@@ -7,7 +7,7 @@ require 'scraperwiki/simple_html_dom.php';
 //
 // // Read in a page
 // $html = scraperwiki::scrape("http://foo.com");
-	for($PageLoop = 100; $PageLoop < 101; $PageLoop++){
+	for($PageLoop = 100; $PageLoop < 103; $PageLoop++){
 $html = scraperwiki::scrape("ww3.comsats.edu.pk/alumni/SearchDetailsOutside.aspx?Id=".$PageLoop);
 echo $html;
 }
